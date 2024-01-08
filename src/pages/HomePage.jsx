@@ -32,7 +32,6 @@ export default function HomePage() {
       return;
     }
     
-    //console.log(`Sucess getting ${userTransactions.username} info.`);
     setTransactions(userTransactions.transactions.reverse());
     setUser(userTransactions.username);
     setBalance(userTransactions.balance);
@@ -202,7 +201,7 @@ const TransactionsContainer = styled.article`
   }
 
   ul::-webkit-scrollbar {
-  display: ${(props) => props.len <= 27 ? 'none' : 'auto'}; /* Oculta a barra de rolagem */
+  display: ${(props) => props.len <= 27 ? 'none' : 'auto'}; 
 }
   article {
     display: flex;
